@@ -1,0 +1,135 @@
+{
+  "@context": [
+    "https://geojson.org/geojson-ld/geojson-context.jsonld",
+    {
+      "@version": "1.1",
+      "wx": "https://api.weather.gov/ontology#",
+      "geo": "http://www.opengis.net/ont/geosparql#",
+      "unit": "http://codes.wmo.int/common/unit/",
+      "@vocab": "https://api.weather.gov/ontology#"
+    }
+  ],
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -81.206753,
+          28.57496
+        ],
+        [
+          -81.2093888,
+          28.5522823
+        ],
+        [
+          -81.1835789,
+          28.549966
+        ],
+        [
+          -81.1809382,
+          28.572643300000003
+        ],
+        [
+          -81.206753,
+          28.57496
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "updated": "2024-02-27T19:29:39+00:00",
+    "units": "us",
+    "forecastGenerator": "BaselineForecastGenerator",
+    "generatedAt": "2024-02-27T19:34:57+00:00",
+    "updateTime": "2024-02-27T19:29:39+00:00",
+    "validTimes": "2024-02-27T13:00:00+00:00/P7DT12H",
+    "elevation": {
+      "unitCode": "wmoUnit:m",
+      "value": 21.9456
+    },
+    "periods": [
+      {
+        "number": 1,
+        "name": "This Afternoon",
+        "startTime": "2024-02-27T14:00:00-05:00",
+        "endTime": "2024-02-27T18:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 80,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": 11.11111111111111
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 40
+        },
+        "windSpeed": "10 mph",
+        "windDirection": "SSE",
+        "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
+        "shortForecast": "Sunny",
+        "detailedForecast": "Sunny, with a high near 80. South southeast wind around 10 mph."
+      },
+      {
+        "number": 2,
+        "name": "Tonight",
+        "startTime": "2024-02-27T18:00:00-05:00",
+        "endTime": "2024-02-28T06:00:00-05:00",
+        "isDaytime": false,
+        "temperature": 58,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": 13.88888888888889
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 93
+        },
+        "windSpeed": "5 to 10 mph",
+        "windDirection": "SSE",
+        "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+        "shortForecast": "Mostly Clear",
+        "detailedForecast": "Mostly clear, with a low around 58. South southeast wind 5 to 10 mph."
+      },
+      {
+        "number": 3,
+        "name": "Wednesday",
+        "startTime": "2024-02-28T06:00:00-05:00",
+        "endTime": "2024-02-28T18:00:00-05:00",
+        "isDaytime": true,
+        "temperature": 84,
+        "temperatureUnit": "F",
+        "temperatureTrend": null,
+        "probabilityOfPrecipitation": {
+          "unitCode": "wmoUnit:percent",
+          "value": null
+        },
+        "dewpoint": {
+          "unitCode": "wmoUnit:degC",
+          "value": 16.11111111111111
+        },
+        "relativeHumidity": {
+          "unitCode": "wmoUnit:percent",
+          "value": 93
+        },
+        "windSpeed": "5 to 15 mph",
+        "windDirection": "SSW",
+        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
+        "shortForecast": "Mostly Sunny",
+        "detailedForecast": "Mostly sunny, with a high near 84. South southwest wind 5 to 15 mph, with gusts as high as 25 mph."
+      }
+    ]
+  }
+}
