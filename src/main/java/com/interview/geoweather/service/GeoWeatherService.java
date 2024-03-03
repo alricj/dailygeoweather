@@ -51,7 +51,8 @@ public class GeoWeatherService {
             WeatherForecastResponse weatherForecastResponse = new WeatherForecastResponse();
             weatherForecastResponse.setDayName(period.getName());
             weatherForecastResponse.setForecastBlurp(period.getShortForecast());
-            weatherForecastResponse.setTempHighCelsius(period.getTemperature());
+            int celsiusTemp =  (period.getTemperature()-32)*5/9;
+            weatherForecastResponse.setTempHighCelsius((celsiusTemp));
 
             return weatherForecastResponse;
 
