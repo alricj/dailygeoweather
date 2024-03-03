@@ -23,6 +23,10 @@ public class GeoWeatherService {
     }
 
 
+    /*
+     where the action takes place
+     */
+
     public Mono<ResponseEntity<?>> getTodaysDayForecast() {
         return webClient.get()
                 .uri(WeatherConstants.ENDPOINT_URl)
@@ -37,7 +41,13 @@ public class GeoWeatherService {
                 });
         }
 
-        private  WeatherForecastResponse mapForecastResponse(ForecastPeriod period){
+    /**
+     * where the action takes place
+     * @param period
+     * @return
+     */
+
+    private  WeatherForecastResponse mapForecastResponse(ForecastPeriod period){
             WeatherForecastResponse weatherForecastResponse = new WeatherForecastResponse();
             weatherForecastResponse.setDayName(period.getName());
             weatherForecastResponse.setForecastBlurp(period.getShortForecast());
